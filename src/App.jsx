@@ -7,6 +7,7 @@ import Blog from './Components/Blog'
 import Galerie from './Components/Galerie'
 import Contact from './Components/Contact'
 import Apropos from './Components/Apropos'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/A propos' element={<Apropos />} />
         
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
