@@ -3,7 +3,7 @@ import React from 'react'
 function Apropos() {
   return (
     <div>
-      yikllm^:^m^$
+    bonjour
     </div>
   )
 }

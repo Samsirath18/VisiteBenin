@@ -30,7 +30,8 @@ function Navbar() {
               <Link className="nav-link" to="/galerie">Galerie</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <button className="custom-btn" ><Link className="nav-link" to="/contact">Contact</Link></button>
+              
             </li>
           </ul>
         </div>

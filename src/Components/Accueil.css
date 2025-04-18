@@ -1,0 +1,46 @@
+
+
+
+  /* Style général de la navbar */
+.navbar-custom {
+    background-color: green;
+  }
+  
+  /* Texte en or */
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: gold !important;
+    font-weight: bold;
+  }
+  
+  /* Effet hover */
+  .navbar-custom .nav-link:hover {
+    color: white !important;
+  }
+  
+  /* Bouton stylé "Contact" */
+  .custom-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Lien dans le bouton */
+  .custom-btn .nav-link {
+    color: orange !important;
+    padding: 0;
+  }
+  
+  /* Effet hover du bouton */
+  .custom-btn:hover {
+    background-color: white;
+  }
+  
+  .custom-btn:hover .nav-link {
+    color: green !important;
+  }
+  
+  

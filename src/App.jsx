@@ -18,7 +18,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/galerie' element={<Galerie />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/A propos' element={<Apropos />} />
+        <Route path='/A-propos' element={<Apropos />} />
         
       </Routes>
     </BrowserRouter>
