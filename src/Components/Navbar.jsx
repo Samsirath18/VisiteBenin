@@ -17,9 +17,7 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/">Accueil</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/A-propos">À propos</Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to="/decouvrir">Découvrir</Link>
             </li>

@@ -20,7 +20,6 @@ function Footer() {
             <h5>Navigation</h5>
             <ul className="list-unstyled">
               <li><a href="/" className="text-warning text-decoration-none">Accueil</a></li>
-              <li><a href="/A-propos" className="text-warning text-decoration-none">À propos</a></li>
               <li><a href="/decouvrir" className="text-warning text-decoration-none">Découvrir</a></li>
               <li><a href="/blog" className="text-warning text-decoration-none">Blog</a></li>
               <li><a href="/galerie" className="text-warning text-decoration-none">Galerie</a></li>
