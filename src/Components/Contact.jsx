@@ -23,7 +23,7 @@ function Contact() {
     <div className="container mt-5">
       <h2 className="mb-4">Formulaire de Contact</h2>
 
-      <form onSubmit={handleSubmit} className="p-4 border rounded shadow-sm ">
+      <form onSubmit={handleSubmit} className="p-4 border rounded shadow-sm fade-in-form ">
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Nom</label>
           <input type="text" id="name" name="name" className="form-control" 
