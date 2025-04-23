@@ -7,6 +7,8 @@ import Decouvrir from './Components/Decouvrir';
 import Blog from './Components/Blog';
 import Galerie from './Components/Galerie';
 import Contact from './Components/Contact';
+import Villes from './Components/Villes';
+import SitesTouristiques from './Components/SitesTouristiques';
 
 
 function App() {
@@ -19,9 +21,12 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="galerie" element={<Galerie />} />
           <Route path="contact" element={<Contact />} />
-        
+          <Route path="decouvrir" element={<><Decouvrir /><Villes /></>} />
+          <Route path="/test-sites" element={<SitesTouristiques />} />
         </Route>
       </Routes>
+      <Villes/>
+      <SitesTouristiques />
     </BrowserRouter>
   );
 }
