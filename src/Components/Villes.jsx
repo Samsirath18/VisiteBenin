@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Villes.css'
 
 function Villes() {
   const [villes, setVilles] = useState([]);
@@ -24,8 +25,8 @@ function Villes() {
   const villeAffichee = villes.find(ville => ville.nom === selectedVille);
 
   return (
-    <div>
-      <h2>Choisissez une ville</h2>
+    <div className='ville-container'>
+      <h2 className='ville-titre'>Choisissez une ville</h2>
       <select onChange={handleChange} value={selectedVille}>
         <option value="">-- Sélectionner une ville --</option>
         {villes.map((ville) => (
@@ -36,7 +37,7 @@ function Villes() {
       </select>
 
       {villeAffichee && (
-        <div style={{ marginTop: '20px' }}>
+        <div className='ville-card' style={{ marginTop: '20px' }}>
           <h3>{villeAffichee.nom}</h3>
           <p><strong>Description:</strong> {villeAffichee.description}</p>
           <p><strong>Histoire:</strong> {villeAffichee.histoire}</p>

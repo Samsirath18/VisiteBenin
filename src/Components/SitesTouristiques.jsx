@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Sites.css'
 
 function SitesTouristiques() {
   const [sites, setSites] = useState([]);
@@ -23,8 +24,8 @@ function SitesTouristiques() {
   const siteAffiche = sites.find(site => site.nom === selectedSite);
 
   return (
-    <div>
-      <h2>Choisissez un site touristique</h2>
+    <div className='sites-container'>
+      <h2 className='site-title'>Choisissez un site touristique</h2>
       <select onChange={handleChange} value={selectedSite}>
         <option value="">-- Sélectionner un site --</option>
         {sites.map((site) => (
@@ -35,7 +36,7 @@ function SitesTouristiques() {
       </select>
 
       {siteAffiche && (
-        <div style={{ marginTop: '20px' }}>
+        <div className='site-card' style={{ marginTop: '20px' }}>
           <h3>{siteAffiche.nom}</h3>
          
           <p><strong>Description :</strong> {siteAffiche.description}</p>
