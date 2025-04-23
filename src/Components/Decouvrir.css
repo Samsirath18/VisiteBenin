@@ -1,55 +1,73 @@
 .discover-page {
-    background-color: #ffcc00; /* Jaune */
-    color: #004d00; /* Vert foncé */
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .discover-page:hover {
-    background-color: #ffb300;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #004d00;
-    margin-bottom: 30px;
-    transition: color 0.3s ease;
-  }
-  
-  .title:hover {
-    color: #ff0000;
-  }
-  
-  .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .dropdown {
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #004d00;
-    border-radius: 8px;
-    background-color: #ffcc00;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown:focus {
-    background-color: #ffb300;
-    outline: none;
-  }
-  
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #e6ffe6, #fff8e1); /* vert clair au jaune */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .hero-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
+.title {
+  text-align: center;
+  color: #007f00;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.dropdown {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+  border-color: #007f00;
+  background-color: #f9fff9;
+}
+
+.main-dropdown {
+  font-weight: bold;
+  color: #007f00;
+}
+
+.hero-image {
+  margin-top: 2rem;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.03);
+}
+.info-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #007f00; /* Vert Bénin */
+  background-color: #fffbe6;
+  border-left: 6px solid #ffcc00; /* Jaune Bénin */
+  margin: 2rem auto 1rem auto;
+  padding: 1rem 1.5rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.info-text:hover {
+  background-color: #fdf5cc;
+}

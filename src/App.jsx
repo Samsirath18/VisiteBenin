@@ -11,6 +11,8 @@ import Villes from './Components/Villes';
 import SitesTouristiques from './Components/SitesTouristiques';
 
 
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,12 +23,10 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="galerie" element={<Galerie />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="decouvrir" element={<><Decouvrir /><Villes /></>} />
           <Route path="/test-sites" element={<SitesTouristiques />} />
         </Route>
       </Routes>
-      <Villes/>
-      <SitesTouristiques />
+     
     </BrowserRouter>
   );
 }
