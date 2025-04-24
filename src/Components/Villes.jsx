@@ -10,10 +10,10 @@ function Villes() {
     axios.get("https://benin-plus-api.onrender.com/api/villes")
       .then((response) => {
         setVilles(response.data);
-        console.log(response.data);
+       // console.log(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   }, []);
 

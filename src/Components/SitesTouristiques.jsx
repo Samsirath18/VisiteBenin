@@ -10,10 +10,10 @@ function SitesTouristiques() {
     axios.get("https://benin-plus-api.onrender.com/api/sites")
       .then((response) => {
         setSites(response.data);
-        console.log(response.data);
+       // console.log(response.data);
       })
       .catch((error) => {
-        console.error("Erreur lors du chargement des sites :", error);
+        //console.error("Erreur lors du chargement des sites :", error);
       });
   }, []);
 
