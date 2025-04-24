@@ -26,15 +26,7 @@ const Decouvrir = () => {
             <option value="sites">Sites touristiques</option>
           </select>
 
-          <img 
-            src="/img/Ville-de-Cotonou-Place-de-lAmazon-Critikmag.webp" 
-            alt="Place de l'Amazone à Cotonou" 
-            className="hero-image"
-          />
-        </div>
-      </div>
-
-      <div className="results-container">
+          <div className="results-container">
         {selectedOption === 'villes' && (
           <>
             <p className="info-text">Veuillez choisir une ville ci-dessous :</p>
@@ -48,6 +40,16 @@ const Decouvrir = () => {
           </>
         )}
       </div>
+
+          <img 
+            src="/img/Ville-de-Cotonou-Place-de-lAmazon-Critikmag.webp" 
+            alt="Place de l'Amazone à Cotonou" 
+            className="hero-image"
+          />
+        </div>
+      </div>
+
+     
     </>
   );
 };
