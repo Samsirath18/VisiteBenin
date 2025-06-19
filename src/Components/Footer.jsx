@@ -23,23 +23,18 @@ function Footer() {
               <li><a href="/decouvrir" className="text-warning text-decoration-none">Découvrir</a></li>
               <li><a href="/blog" className="text-warning text-decoration-none">Blog</a></li>
               <li><a href="/galerie" className="text-warning text-decoration-none">Galerie</a></li>
-              <li><a href="/contact" className="text-warning text-decoration-none">Contact</a></li>
+              <li><a href="/acheter" className="text-warning text-decoration-none">Acheter</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="col-md-4 mb-4">
-            <h5>Contact</h5>
-            <p><FaEnvelope className="me-2" /> contact@beninplus.com</p>
+            <h5>Acheter</h5>
+            <p><FaEnvelope className="me-2" /> samsirathsylla@gmail.com</p>
             <p><FaPhoneAlt className="me-2" /> +229 01 60 53 34 15/ 01 91 16 22 82</p>
             <p><FaMapMarkerAlt className="me-2" /> Parakou, Bénin</p>
 
-            {/* Réseaux sociaux */}
-            <div className="mt-3">
-              <a href="#" className="text-warning me-3 fs-5"><FaFacebook /></a>
-              <a href="#" className="text-warning me-3 fs-5"><FaInstagram /></a>
-              <a href="#" className="text-warning fs-5"><FaTwitter /></a>
-            </div>
+            
           </div>
         </div>
 

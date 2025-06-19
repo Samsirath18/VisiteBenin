@@ -3,6 +3,7 @@
   background: linear-gradient(to bottom right, #e6ffe6, #fff8e1); /* vert clair au jaune */
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 6%;
 }
 
 .title {

@@ -22,16 +22,18 @@ function Accueil() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
+  <div className="video-container">
+  <img
           className="d-block w-100"
           src="/img/Kankangui_instrument_de_musique_de_l'aire_cuturelle_Baatonu._03.jpg"
-          alt="benin"
+          alt="gaani"
         />
-        <Carousel.Caption>
-          <h3>BENIN+</h3>
-          <p>Un pays hospitalier</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+  </div>
+  <Carousel.Caption>
+    <h3>BENIN+</h3>
+    <p>Un pays hospitalier</p>
+  </Carousel.Caption>
+</Carousel.Item>
 
       <Carousel.Item>
         <img
@@ -120,7 +122,78 @@ function Accueil() {
           </div>
         </div>
       </div>
-    
+      {/* === Section Découvrir === */}
+<div className="container my-5 p-4 rounded shadow" style={{ backgroundColor: '#e8f5e9' }}>
+  <div className="row align-items-center">
+    <div className="col-md-6">
+    <video className="img-fluid rounded shadow" controls>
+        <source src="/video/hymne_benin_filles_ceg.mp4" type="video/mp4" />
+        
+      </video>
+    </div>
+    <div className="container my-5 p-5 rounded-4 shadow" style={{ backgroundColor: '#e8f5e9' }}>
+  <div className="row align-items-center">
+    <div className="col-md-6 mb-4 mb-md-0">
+      <img
+        src="/img/0713576001606803612.png"
+        alt="Découvrir le Bénin"
+        className="img-fluid rounded-4 shadow"
+      />
+    </div>
+    <div className="col-md-6">
+      <h2 style={{ color: '#2e7d32', fontWeight: 'bold' }}>Découvrir le Bénin</h2>
+      <p style={{ fontSize: '1.1rem' }}>
+        Partez à la rencontre d’un pays riche de culture, de traditions et de paysages variés.
+        Villes historiques, sites touristiques et expériences uniques vous attendent !
+      </p>
+      <a href="/decouvrir" className="btn btn-lg" style={{ backgroundColor: '#2e7d32', color: '#fff' }}>
+        Explorer maintenant
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div className="container my-5 evenement-culturel">
+  <div className="row align-items-center">
+    <div className="col-md-6">
+      <video className="img-fluid rounded shadow" controls>
+        <source src="/video/Festival_des_arts_griotiques(360p).mp4" type="video/mp4" />
+        </video>
+    </div>
+   
+    <div className="col-md-6">
+      <h2>Événements Culturels</h2>
+      <p>
+        Festivals, rituels traditionnels et spectacles artistiques rythment la vie culturelle béninoise.
+        Ne manquez pas ces moments forts qui célèbrent l'identité du pays.
+      </p>
+      <a href="/evenements" className="btn btn-outline-primary">Voir les événements</a>
+    </div>
+  </div>
+</div>
+
+{/* === Témoignages === */}
+<div className="container my-5 temoignage-section">
+  <div className="row align-items-center flex-md-row-reverse">
+    <div className="col-md-6">
+      <img
+        src="/img/Le-temoignage-video.jpg"
+        alt="Témoignages"
+        className="img-fluid rounded shadow"
+      />
+    </div>
+    <div className="col-md-6">
+      <h2>Témoignages</h2>
+      <p>
+        Écoutez les récits inspirants de visiteurs, d’artisans, et de passionnés du Bénin. Leurs voix racontent l’authenticité de ce pays extraordinaire.
+      </p>
+      <a href="/temoignages" className="btn btn-outline-danger">Lire les témoignages</a>
+    </div>
+  </div>
+</div>
+
      </>
 
    

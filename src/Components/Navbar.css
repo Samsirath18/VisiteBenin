@@ -1,18 +1,63 @@
-
+/* === NAVBAR FIXE EN HAUT === */
 .navbar-custom {
-    background-color: #006400; /* Vert Empire */
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #006400; /* Vert Empire */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1.5rem;
+}
 
-  .benin-logo {
-    font-family: 'Poppins', sans-serif; /* Ou 'Raleway', 'Montserrat', etc. */
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #FFD700; /* Or pour rappeler le Bénin */
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
+/* === LOGO BENIN + === */
+.benin-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
 
-  
- 
-  
-  
+/* === STYLE DES LIENS === */
+.navbar-custom .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFD700;
+  margin-left: 1.2rem;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* === HOVER === */
+.navbar-custom .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFEB3B;
+}
+
+/* === LIEN ACTIF ENCADRÉ === */
+.navbar-custom .nav-link.active {
+  border: 2px solid white;
+  border-radius: 6px;
+  color: #FFD700;
+  padding: 6px 12px;
+}
+
+
+/* === POUR AJOUTER DE L'ESPACE EN HAUT DU BODY === */
+body {
+  padding-top: 80px; /* Compense la navbar fixe */
+}
+
+/* === RESPONSIVE AJUSTEMENTS === */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: right;
+  }
+  .navbar-custom .nav-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

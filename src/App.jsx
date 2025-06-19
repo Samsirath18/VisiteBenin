@@ -6,7 +6,7 @@ import Accueil from './Components/Accueil';
 import Decouvrir from './Components/Decouvrir';
 import Blog from './Components/Blog';
 import Galerie from './Components/Galerie';
-import Contact from './Components/Contact';
+import Acheter from './Components/Acheter';
 import Villes from './Components/Villes';
 import SitesTouristiques from './Components/SitesTouristiques';
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="decouvrir" element={<Decouvrir />} />
           <Route path="blog" element={<Blog />} />
           <Route path="galerie" element={<Galerie />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="acheter" element={<Acheter />} />
           <Route path="/test-sites" element={<SitesTouristiques />} />
         </Route>
       </Routes>

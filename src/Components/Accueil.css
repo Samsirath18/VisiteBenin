@@ -1,47 +1,131 @@
+/* Accueil.css */
+
+.carousel-caption h3 {
+  color: #FFD700; /* Jaune vif pour les titres */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.card-title {
+  color: #D10000; /* Rouge pour les titres de carte */
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn-outline-danger {
+  border-color: #D10000;
+  color: #D10000;
+}
+
+.btn-outline-danger:hover {
+  background-color: #D10000;
+  color: #fff;
+}
+
+.btn-outline-success {
+  border-color: #008000;
+  color: #008000;
+}
+
+.btn-outline-success:hover {
+  background-color: #008000;
+  color: #fff;
+}
+
+.btn-outline-warning {
+  border-color: #FFD700;
+  color: #FFD700;
+}
+
+.btn-outline-warning:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+h2 {
+  color: #008000;
+  font-weight: 700;
+}
+
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* === Section Événements Culturels === */
+.evenement-culturel {
+  background-color: #e6ffe6; /* Vert clair */
+  border-left: 6px solid #008000; /* Vert */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.evenement-culturel h2 {
+  color: #008000; /* Vert fort */
+}
+
+.evenement-culturel p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.evenement-culturel a.btn {
+  border-color: #008000;
+  color: #008000;
+}
+
+.evenement-culturel a.btn:hover {
+  background-color: #008000;
+  color: #fff;
+}
+
+
+/* === Section Témoignages === */
+.temoignage-section {
+  background-color: #fff5f5; /* Rouge clair */
+  border-right: 6px solid #D10000; /* Rouge vif */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.temoignage-section h2 {
+  color: #D10000;
+}
+
+.temoignage-section p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.temoignage-section a.btn {
+  border-color: #D10000;
+  color: #D10000;
+}
+
+.temoignage-section a.btn:hover {
+  background-color: #D10000;
+  color: #fff;
+}
 
 
 
-  /* Style général de la navbar */
-.navbar-custom {
-    background-color: green;
-  }
-  
-  /* Texte en or */
-  .navbar-custom .navbar-brand,
-  .navbar-custom .nav-link {
-    color: gold !important;
-    font-weight: bold;
-  }
-  
-  /* Effet hover */
-  .navbar-custom .nav-link:hover {
-    color: white !important;
-  }
-  
-  /* Bouton stylé "Contact" */
-  .custom-btn {
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  /* Lien dans le bouton */
-  .custom-btn .nav-link {
-    color: orange !important;
-    padding: 0;
-  }
-  
-  /* Effet hover du bouton */
-  .custom-btn:hover {
-    background-color: white;
-  }
-  
-  .custom-btn:hover .nav-link {
-    color: green !important;
-  }
-  
- 
-  
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
