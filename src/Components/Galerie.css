@@ -1,169 +1,165 @@
-
-
-
-
-
-
 .galerie-page {
   padding: 2rem;
-  background: #fffaf0;
-  font-family: 'Segoe UI', sans-serif;
-  margin-top: 6%;
+  background-color: #fffdf5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #008000;
-  margin: 2rem 0 1rem;
+/* Titres */
+.galerie-page h1 {
+  color: #117733;
+  margin-bottom: 2rem;
   border-left: 8px solid #ffcc00;
   padding-left: 1rem;
 }
 
+/* Section artisanat, danses */
 .section {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-/* Pour la section Artisanat - Bordure rouge */
-.section .card {
-  background-color: #f0fff0;
-  border: 2px solid #ff0000;  /* Bordure rouge */
-  border-radius: 12px;
-  width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+.card {
+  background-color: white;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.2);
+  transform: scale(1.03);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  
 }
 
 .card h3 {
-  font-size: 1.2rem;
-  color: #ffcc00;
-  margin: 0.5rem;
+  color: #117733;
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .card p {
   font-size: 0.95rem;
+  padding: 0 1rem 1rem;
   color: #444;
-  padding: 0 0.8rem 1rem;
 }
 
-/* Danses Traditionnelles - Bordure rouge */
-.section .card {
-  border: 2px solid #ff0000;  /* Bordure rouge */
-}
-
-/* Gastronomie Section */
+/* Gastronomie */
 .gastronomie-item {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: #fffbe6;
-  border-left: 6px solid #ff0000;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  align-items: center;
+  background-color: #fff9e5;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
 }
 
 .gastronomie-text {
   flex: 1;
-  text-align: left;
+  min-width: 280px;
 }
 
 .gastronomie-text img {
   width: 100%;
   max-width: 300px;
-  height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 1rem;
-  border: 3px solid #ffcc00;
 }
 
 .gastronomie-text h3 {
-  color: #008000;
-  margin-bottom: 0.5rem;
-}
-
-.gastronomie-text p {
-  font-size: 0.95rem;
-  color: #333;
+  color: #c4211e;
 }
 
 .gastronomie-video {
   flex: 1;
+  min-width: 300px;
+  padding: 1rem;
 }
 
 .gastronomie-video iframe {
   width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  border: 3px solid #ff0000;
+  height: 200px;
+  border-radius: 12px;
 }
 
-/* Section Acheter */
-#acheter {
-  background-color: #e6ffe6;
-  border-top: 5px solid #008000;
-  border-radius: 10px;
-  padding: 2rem;
-  margin-top: 4rem;
+/* Boutique : section #acheter */
+#acheter .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-#acheter h2 {
-  color: #008000;
+#acheter .card {
+  width: 280px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+#acheter .card:hover {
+  transform: scale(1.03);
+}
+
+#acheter .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;  /* 🔥 Affiche toute l'image sans rognage */
+  padding: 1rem;
+  background-color: #fafafa;
+  border-bottom: 2px solid #c00;
+}
+
+/* Corps de la carte */
+#acheter .card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#acheter .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #004d26;
+  margin-bottom: 0.5rem;
+}
+
+#acheter .card-text {
+  font-size: 0.95rem;
+  color: #333;
   margin-bottom: 1rem;
 }
 
-#acheter p {
-  color: #333;
-  font-size: 1rem;
+#acheter .btn {
+  background-color: #004d26;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gastronomie-item {
-    flex-direction: column;
-  }
-
-  .gastronomie-video iframe {
-    height: 200px;
-  }
+#acheter .btn:hover {
+  background-color: #007a3d;
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .card h3, .gastronomie-text h3 {
-    font-size: 1.1rem;
-  }
-
-  .card p, .gastronomie-text p {
-    font-size: 0.9rem;
-  }
-
-  .gastronomie-video iframe {
-    height: 180px;
-  }
-}

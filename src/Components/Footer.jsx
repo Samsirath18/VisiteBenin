@@ -23,7 +23,7 @@ function Footer() {
               <li><a href="/decouvrir" className="text-warning text-decoration-none">Découvrir</a></li>
               <li><a href="/blog" className="text-warning text-decoration-none">Blog</a></li>
               <li><a href="/galerie" className="text-warning text-decoration-none">Galerie</a></li>
-              <li><a href="/acheter" className="text-warning text-decoration-none">Acheter</a></li>
+              
             </ul>
           </div>
 
