@@ -4,9 +4,9 @@ import Navbar from './Components/Navbar.jsx'
 import Accueil from './Components/Accueil.jsx'
 import Decouvrir from './Components/Decouvrir.jsx'
 import Blog from './Components/Blog.jsx'
-import Acheter from './Components/Acheter.jsx'
 import Galerie from './Components/Galerie.jsx'
 import Footer from './Components/Footer.jsx'
+import Sidebar from './Components/Sidebar.jsx'
 
 import App from './App.jsx'
 

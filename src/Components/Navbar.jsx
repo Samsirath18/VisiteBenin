@@ -27,9 +27,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink to="/galerie" className="nav-link">Galerie</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/acheter" className="nav-link">Acheter</NavLink>
-            </li>
+            
           </ul>
         </div>
       </div>
