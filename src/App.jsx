@@ -12,6 +12,8 @@ import Sidebar from './Components/Sidebar';
 import Evenements from './Components/Evenements';
 import Temoignages from './Components/Temoignages';
 import Paiement from './Components/Paiement';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // requis pour navbar-toggler
+
 
 
 

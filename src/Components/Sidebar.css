@@ -56,3 +56,9 @@
   color: rgb(56, 192, 2);
   cursor: pointer;
 }
+
+@media (min-width: 992px) {
+  .sidebar-toggle-button {
+    display: none;
+  }
+}
