@@ -169,7 +169,7 @@ function Accueil() {
         Festivals, rituels traditionnels et spectacles artistiques rythment la vie culturelle béninoise.
         Ne manquez pas ces moments forts qui célèbrent l'identité du pays.
       </p>
-      <a href="/evenements" className="btn btn-outline-primary">Voir les événements</a>
+  <a href="/evenements" className="btn btn-outline-primary">Voir les événements</a>
     </div>
   </div>
 </div>

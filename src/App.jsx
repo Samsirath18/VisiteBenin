@@ -9,6 +9,9 @@ import Galerie from './Components/Galerie';
 import Villes from './Components/Villes';
 import SitesTouristiques from './Components/SitesTouristiques';
 import Sidebar from './Components/Sidebar';
+import Evenements from './Components/Evenements';
+import Temoignages from './Components/Temoignages';
+import Paiement from './Components/Paiement';
 
 
 
@@ -22,6 +25,9 @@ function App() {
           <Route path="decouvrir" element={<Decouvrir />} />
           <Route path="blog" element={<Blog />} />
           <Route path="galerie" element={<Galerie />} />
+           <Route path="evenements" element={<Evenements />} />
+           <Route path="temoignages" element={<Temoignages />} />
+           <Route path="paiement" element={<Paiement />} />
         
           <Route path="/test-sites" element={<SitesTouristiques />} />
         </Route>
