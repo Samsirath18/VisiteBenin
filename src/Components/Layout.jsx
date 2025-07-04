@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 
 function Layout() {
   return (
-    <div style={{ position: 'relative', minHeight: '100vh' }}>
+    <div style={{ position: 'relative', minHeight: '100vh', paddingTop:'70px' }}>
       <Navbar />
       <Sidebar />
       <main style={{ minHeight: '80vh' }}>

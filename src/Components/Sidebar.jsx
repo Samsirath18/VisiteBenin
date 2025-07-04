@@ -8,14 +8,14 @@ function Sidebar() {
   return (
     <>
       <div className="sidebar-toggle-button" onClick={() => setOpen(!open)}>
-       ⁘⁝
+       ici
       </div>
 
       <div className={`sidebar-slide ${open ? 'open' : ''}`}>
         <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
         <h2>Bénin +</h2>
         <nav>
-          <Link to="/paiement" onClick={() => setOpen(false)}>Payer</Link>
+          <Link to="/paiement" onClick={() => setOpen(false)}> Payer</Link>
           <Link to="/evenements" onClick={() => setOpen(false)}>Événements </Link>
           <Link to="/temoignages" onClick={() => setOpen(false)}>Témoignages</Link>
         </nav>
